@@ -1,0 +1,371 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+
+}
+
+header{
+    background: #0e0c4f url("../mg/mg_P2.jpg") no-repeat center;
+    background-size: cover;
+    height: 40vh;
+    color: #FFF;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+                    /*CARD*/
+.card:hover .front{ transform: rotateY(180deg)}
+.card:hover .back{ transform: rotateY(360deg)}
+.front, .back{
+    border-radius: 150px;
+    position: absolute;
+    left:0;
+    right:0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .333s;
+    backface-visibility: hidden;
+    color: orange;
+    font-size: 32px;
+    text-transform: uppercase;
+}
+.card{
+    transform: translateY(-133px);
+    margin-left: 3%;
+    height: 257px;
+    width: 257px;
+    perspective: 800px;
+}
+.front{
+    background-color: #0E0C4F;
+}
+.back{
+    background: url("../mg/lev_morda_griva_car_zverey_abstrakciya_68611_1920x1080.jpg") no-repeat center;
+    filter: brightness(77%);
+    background-size: cover;
+    transform: rotateY(180deg);
+}
+@media (max-width: 990px) {
+    .card{
+        height: 257px;
+        width: 257px;
+        margin: 0 auto;
+        transform: translateY(-133px);
+    }
+}
+                                            /*/CARD*/
+
+                                            /*MAIN*/
+
+img{
+    height: 350px;
+    width: 100%;
+    border-radius: 17px 17px 0 0 ;
+    object-fit: cover;
+}
+.block__img{
+    margin: 0 auto;
+    width: 320px;
+    background-color: #809aff;
+    border-radius: 17px;
+    line-height: 30px;
+    padding-bottom: 5px;
+}
+/*@media (max-width: 800px) {*/
+    /*img{*/
+        /*height: 443px;*/
+    /*}*/
+    /*.block__img{*/
+        /*width: 270px;*/
+    /*}*/
+/*}*/
+.block__img p{
+    font-size: 16px;
+    margin: 2%  3% ;
+}
+#myInput{
+    background-color: transparent;
+    border: 0px solid;
+    cursor: alias;
+    font-size: 17px;
+    color: #000;
+
+}
+#myInput:focus{
+    outline: none;
+}
+.copy_text_button:focus{
+    outline: none;
+    padding: 5px 3px 5px 3px;
+    background-color: mediumspringgreen;
+}
+.copy_text_button{
+    font-size:17px;
+    padding: 5px 7px 5px 7px;
+    border: none;
+    border-radius: 17px;
+    background-color: #fff;
+    cursor:copy;
+}
+#myInputNumber{
+    background-color: transparent;
+    border: 0px solid;
+    cursor: cell;
+    font-size: 17px;
+    color: #000;
+    width: 50.5%;
+}
+#myInputNumber:focus{
+    outline: none;
+}
+.copy_number_button:focus{
+    outline: none;
+    padding: 5px 3px 5px 3px;
+    background-color: mediumspringgreen;
+
+}
+.copy_number_button{
+    font-size:17px;
+    padding: 5px 7px 5px 7px;
+    border: none;
+    border-radius: 19px;
+    background-color: white;
+    cursor:copy;
+}
+#myInputSkype{
+    background-color: transparent;
+    border: 0px solid;
+    cursor: pointer;
+    font-size: 18px;
+    color: #000;
+    width: 61%;
+}
+#myInputSkype:focus{
+    outline: none;
+}
+.copy_Skype_button:focus{
+    outline: none;
+    padding: 5px 3px 5px 3px;
+    background-color: mediumspringgreen;
+}
+.copy_Skype_button{
+    font-size:17px;
+    padding: 5px 7px 5px 7px;
+    border: none;
+    border-radius: 19px;
+    background-color: white;
+    cursor:copy;
+}
+.pdf{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    vertical-align: middle;
+    width: 95%;
+    margin: 0 auto;
+}
+.pdf_flex{
+    padding: 7px;
+}
+.pdf_a{
+    text-decoration: none;
+}
+.wrap__pdf{
+    float: left;
+    margin: 7px 0 7px 11px;
+    background-image: url(mg/icon/pre.png);
+    height: 24px;
+    width: 24px;
+}
+.pdf:hover .wrap__pdf{
+    background-image: url(mg/icon/post.png);
+
+}
+.text__pdf{
+    vertical-align: middle;
+    color: white;
+
+}
+.container{
+    position: relative;
+    margin: 0 auto 50px;
+    max-width: 1000px;
+}
+.cv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+@media (max-width: 800px) {
+    .cv{
+        justify-content: center;
+    }
+}
+.cv-item{
+    flex-basis: 50%;
+    line-height: 20px;
+    margin-bottom: 55px;
+}
+@media (max-width: 700px) {
+    .cv-item{
+        flex-basis: 100%;
+
+    }
+}
+@media (max-width: 700px) {
+    .cv__text-item{
+        padding-left: 5px;
+        padding-right: 5px;
+
+    }
+}
+.s-header, .container-s__body{
+    display: flex;
+    justify-content: start;
+}
+.language, .tools, .c-s_b{
+    flex-basis: 50%;
+}
+h3{
+    margin: 13px 0;
+    color: #809aff;
+}
+h3:after{
+    content: '';
+    display: block;
+    border-bottom:2px solid rgba( 225,225,225,.3);
+    width: 80%;
+}
+.s-header{
+    background-color: #809aff;
+    width: 80%;
+    padding: 5px 7px;
+    border-radius: 7px;
+    margin: 10px auto;
+}
+.container-s__body{
+    width: 90%;
+    margin: 0 auto;
+    padding-left: 15px;
+}
+li{
+    list-style: none;
+    line-height: 30px;
+    padding-left: 10px;
+}
+.summery{
+    transform: translateY(10px);
+}
+
+
+
+
+
+
+
+
+                                            /*/MAIN*/
+
+                                            /*FOOTER*/
+.col-4{
+    width: 360px;
+}
+.row{
+    box-sizing: border-box;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.footer{
+    background-color: #0E0C4F;
+    color: #044D78;
+    padding-bottom:80px;
+    padding-top:90px;
+}
+.footer p{
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+p.footer__name{
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-bottom: 10px;
+    font-family: 'Merriweather', serif;
+}
+p.footer__social{
+    color: #FFF;
+}
+p.footer_social_icons{
+    color: #FFF;
+    font-size: 32px;
+    padding-left: 17px;
+}
+p.footer_social_icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 30px;
+}
+p.footer_social_icons a:last-child{
+    margin-right: 0;
+}
+p.footer_social_icons a:hover{
+    color: gold;
+}
+.button{
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    border: 2px solid white;
+    border-radius: 50px;
+    font-weight: 700;
+    padding: 8px 23px;
+    color: #FFF;
+    -webkit-transition: 0.2s ease-out;
+    -moz-transition: 0.2s ease-out;
+    -ms-transition: 0.2s ease-out;
+    -o-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+}
+.button:hover{
+    border: 2px solid white;
+    color: #0E0C4F;
+    background-color: #FFFFFF;
+}
+p.footer_social_icons{
+    color: #FFF;
+    font-size: 32px;
+    padding-left: 17px;
+}
+p.footer_social_icons a {
+    color: #FFF;
+    text-decoration: none;
+    margin-right: 30px;
+}
+p.footer_social_icons a:last-child{
+    margin-right: 0;
+}
+p.footer_social_icons a:hover{
+    color: gold;
+}
+@media (max-width: 990px) {
+    .row{
+        box-sizing: border-box;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+ul#li-dots li {
+    list-style: circle;
+}
