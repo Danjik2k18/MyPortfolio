@@ -48,7 +48,7 @@ header{
     background-color: #0E0C4F;
 }
 .back{
-    background: url("../mg/lev_morda_griva_car_zverey_abstrakciya_68611_1920x1080.jpg") no-repeat center;
+    background: url("../mg/portfolio.jpg") no-repeat center;
     filter: brightness(77%);
     background-size: cover;
     transform: rotateY(180deg);
